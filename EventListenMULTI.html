@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> You Have not clicked any button</h1>
+    <button class="b">Button 1</button>
+    <button class="b">Button 2</button>
+    <button class="b">Button 3</button>
+
+    <script>
+        var len=document.querySelectorAll(".b").length;
+        
+        for(i=0;i<len;i++){
+document.querySelectorAll(".b")[i].addEventListener("click",function(){
+    var text=this.innerHTML;
+document.querySelector("h1").innerHTML=text + " is clicked";
+
+});
+}
+
+    </script>
+</body>
+</html>

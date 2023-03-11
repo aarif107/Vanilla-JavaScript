@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.style{
+color: blue;
+font-size:3rem ;
+font-weight: bold;
+font-style: italic;
+}
+
+</style>
+<body>
+
+<p class="name">Zaira Hussain</p>
+<p class="az">Aarif+Zaira</p>
+<button  onclick="addstyle()">Add Style</button>
+<button onclick="removestyle()">Remove Style</button>
+    <script>
+function addstyle(){
+var name=document.querySelector(".name");
+var az=document.querySelector(".az"); 
+/*name.style.color="red";
+name.style.fontSize="3rem"; 
+name.style.fontWeight="bold"; 
+name.style.fontStyle="italic";*/
+name.classList.add("style");
+az.classList.add("style");
+}
+function removestyle(){
+    var name=document.querySelector(".name");
+    var az=document.querySelector(".az");
+    name.classList.remove("style"); 
+    az.classList.remove("style"); 
+
+}
+
+    </script>
+</body>
+</html>

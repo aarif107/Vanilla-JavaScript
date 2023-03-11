@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id="demo" for getElementById -->
+    <p id="demo"></p>
+    <script>
+
+/*              Creating Object
+var student1={
+name:"Aarif",
+ age:21,
+ cgpa:3.36,
+ lang:["Python","JavaScript","Angular","AJAX"]
+}
+document.getElementById("demo").innerHTML=student1.name+" "+student1.lang;
+*/
+
+//adding constructor    
+ function student(name,age,cgpa,lang){
+this.name=name;
+this.age=age;
+this.cgpa=cgpa;
+this.lang=lang;
+this.display=function(){
+document.write(this.name+"</br>",+this.age+"</br>",+this.cgpa+"</br>",+this.lang+"</br>"+"</br>");    
+}
+ } 
+
+var student1=new student("Aarif",21,3.36,["Python","JavaScript","Angular","AJAX"]);
+var student2=new student("Nazli",17,3.36,["Python","JavaScript","Angular","AJAX"]);
+var student3=new student("Hayat",17,3.36,["Python","JavaScript","Angular","AJAX"]);
+
+//document.write(student1.name+" "+student1.age+" "+student1.lang);
+student1.display();
+student2.display();
+student3.display();
+//adding function inside a constructor
+
+/*function python(name,age,cgpa,lang){
+this.name=name;
+this.age=age;
+this.cgpa=cgpa;
+this.lang=lang;
+this.display=function(){
+document.write(this.name+" "+this.age+" "+this.lang)    
+}
+ }*/
+
+    </script>
+</body>
+</html>

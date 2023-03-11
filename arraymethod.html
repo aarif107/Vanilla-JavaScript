@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        names=["Sara","Hayat","Nazli","zara"];
+        document.write(names+" </br> ");
+//shift method delete first element
+        names.shift();
+//unshift added to first index
+        names.unshift("Ayesha");
+        document.write(names+" </br> ");
+
+//(2,0,"Aarif"):add in 2 index,delete 0,add aarif in 2 index 
+        Cnames=["Sara","Hayat","Nazli","zara"];
+        Cnames.splice(2,0,"Aarif");
+        document.write(Cnames+" </br> ");
+ //remove with splice
+       //Cnames.splice(1,2); 
+
+//slice it create new Array
+   fruit=["fig","Banana","Mango","Cocoa"];
+   var array=fruit.slice(1);
+   document.write(array+" </br> ");  
+
+//sort method work with alphabet
+  var sortedfruit=fruit.sort(); 
+  document.write(sortedfruit+" </br> ");
+  var rev=fruit.reverse();
+  document.write(rev+" </br> ");
+
+//number sorting
+var numbers=[20,45,6,9,3,4,1];
+numbers.sort(function(a,b){
+    return a-b;
+});
+document.write(numbers);
+
+/*reverse number sorting
+
+var numbers=[20,45,6,9,3,4,1];
+numbers.sort(function(a,b){
+    return b-a;
+});
+document.write(numbers);*/
+
+    </script>
+</body>
+</html>
